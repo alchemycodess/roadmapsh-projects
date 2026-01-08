@@ -31,12 +31,16 @@ Example:
 5. Example output
 
 if we run:
+```bash
 node script github-activity kamranahmedse
+``` 
 Output:
+```text
 Starred remorses/playwriter
 Starred kamranahmedse/claude-run
 Closed an issue in kamranahmedse/developer-roadmap
 Closed an issue in kamranahmedse/developer-roadmap
+```
 
 6. Error handling 
 
