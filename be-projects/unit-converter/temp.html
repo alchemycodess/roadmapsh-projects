@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Unit converter</h1>
+    <nav>
+        <ul>
+            <li><a href="http://localhost:5500/be-projects/unit-converter/">Length</a></li>
+            <li><a href="weight.html">Weight</a></li>
+            <li><a href="temp.html">Temperature</a></li>
+        </ul>
+    </nav>
+    <form method="post" target="_self" action="http://localhost:3000/convertt">
+
+        <p>Enter the temperature to convert</p>
+        <input type="number" name="value">
+
+        <p>Unit to convert from</p>
+        <input type="text" name="from">
+
+        <p>Unit to convert to</p>
+        <input type="text" name="to">
+
+        <button type="submit">Convert</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
