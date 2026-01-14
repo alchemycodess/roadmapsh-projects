@@ -17,6 +17,9 @@ importers:
       express:
         specifier: ^5.2.1
         version: 5.2.1
+      marked:
+        specifier: ^17.0.1
+        version: 17.0.1
 
 packages:
 
@@ -179,6 +182,11 @@ packages:
   jake@10.9.4:
     resolution: {integrity: sha512-wpHYzhxiVQL+IV05BLE2Xn34zW1S223hvjtqk0+gsPrwd/8JNLXJgZZM/iPFsYc1xyphF+6M6EvdE5E9MBGkDA==}
     engines: {node: '>=10'}
+    hasBin: true
+
+  marked@17.0.1:
+    resolution: {integrity: sha512-boeBdiS0ghpWcSwoNm/jJBwdpFaMnZWRzjA6SkUMYb40SVaN1x7mmfGKp0jvexGcx+7y2La5zRZsYFZI6Qpypg==}
+    engines: {node: '>= 20'}
     hasBin: true
 
   math-intrinsics@1.1.0:
@@ -492,6 +500,8 @@ snapshots:
       async: 3.2.6
       filelist: 1.0.4
       picocolors: 1.1.1
+
+  marked@17.0.1: {}
 
   math-intrinsics@1.1.0: {}
 

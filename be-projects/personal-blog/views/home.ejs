@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Blog</title>
+</head>
+<body>
+
+  <h1>Personal Blog</h1>
+
+  <ul>
+    <% articles.forEach(article => { %>
+      <li>
+        <a href="/article/<%= article %>">
+          <%= article %>
+        </a>
+      </li>
+    <% }) %>
+  </ul>
+
+</body>
+</html>
