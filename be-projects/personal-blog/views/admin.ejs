@@ -50,7 +50,15 @@
 
       <div class="actions">
         <a href="/update/<%= article.filename %>">Edit</a>
-        <a href="/delete/<%= article.filename %>">Delete</a>
+        <form
+          action="/delete/<%= article.filename %>"
+          method="POST"
+          onsubmit="return confirm('Do you really want to delete this article?')"
+          style="display:inline;"
+        >
+          <button type="submit">Delete</button>
+        </form>
+
       </div>
     </div>
   <% }) %>

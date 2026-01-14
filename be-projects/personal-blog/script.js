@@ -61,8 +61,6 @@ Date: ${date}
 
 ${cleanContent}
 `
-  console.log(markdown)
-
   const filePath = `storage/${filename}`
 
   fs.writeFileSync(filePath, markdown)
@@ -125,6 +123,14 @@ ${cleanContent}
   res.redirect("/admin")
 })
 
+
+// delete
+app.post("/delete/:filename", (req, res) => {
+  const filename = req.params.filename
+  fs.unlinkSync(`storage/${filename}`)
+
+  res.redirect("/admin")
+})
 
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`)
