@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .article {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .actions a {
+      margin-left: 10px;
+      text-decoration: none;
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>Personal Blog</h1>
+    <a href="/new">+ Add</a>
+  </div>
+
+  <a href="/">← Back to Home</a>
+
+  <% articles.forEach(article => { %>
+    <div class="article">
+      <div>
+        <a href="/article/<%= article.filename %>">
+          <%= article.title %>
+        </a>
+      </div>
+
+      <div class="actions">
+        <a href="/update/<%= article.filename %>">Edit</a>
+        <a href="/delete/<%= article.filename %>">Delete</a>
+      </div>
+    </div>
+  <% }) %>
+
+</body>
+</html>
